@@ -97,7 +97,7 @@ form input {
     padding: 1em;
     overflow: hidden;
     cursor: grab;
-    transition: 1s;
+    transition: background-color 1s;
 }
 #list-container li p {    
     animation: slide-down 200ms linear;
