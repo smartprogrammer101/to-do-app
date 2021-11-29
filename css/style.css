@@ -25,6 +25,7 @@ body {
     background-color: hsl(235, 21%, 11%);
     color: hsl(0, 0%, 98%);
     transition: background-color 1s;
+    user-select: none;
 }
 header {
     height: 40vh;
@@ -82,16 +83,21 @@ form input {
 #list-container {
     margin-bottom: 1em;
     transition: background-color 1s;
+    border-top: 1px solid #fff;
+    overflow: hidden;
 }
-#list-container li {   
+#list-container li {
+    background-color: hsl(235, 24%, 19%);
     width: 100%;
     border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1em;
     overflow: hidden;
     cursor: grab;
+    transition: 1s;
 }
 #list-container li p {    
     animation: slide-down 200ms linear;
@@ -118,6 +124,7 @@ form input {
     justify-content: space-between;
     padding: 1em;
     position: relative;
+    border-top: 2px solid #fff;
 }
 #list-footer h5 {
     color: hsl(236, 9%, 61%);
@@ -174,7 +181,9 @@ footer {
     background-color: hsl(0, 0%, 98%);
 }
 .lightmode #list-container li {
+    color: #000;
     border-color: hsl(233, 11%, 84%);
+    background-color: hsl(0, 0%, 98%);
 }
 .lightmode footer{
     color: hsl(237, 14%, 26%);

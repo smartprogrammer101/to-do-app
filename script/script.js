@@ -15,6 +15,7 @@
     const filterButtons = document.querySelectorAll("#filter-buttons h5");
     const toggleModeImage = document.querySelector("#todo-title img");
 
+    newTodoInput.focus();
     toggleModeImage.addEventListener("click", changeMode);
 
     function changeMode() {
