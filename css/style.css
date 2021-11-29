@@ -78,6 +78,7 @@ form input {
     background-color: transparent;
     border: none;
     outline: none;
+    color: #fff;
 }
 
 #list-container {
@@ -175,6 +176,9 @@ footer {
 .lightmode {
     color: hsl(234, 11%, 52%);
     background-color: hsl(233, 11%, 84%);
+}
+.lightmode form input {
+    color: #000;
 }
 .lightmode #create-todo-container,
 .lightmode #list-container {
